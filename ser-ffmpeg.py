@@ -19,6 +19,7 @@ from PIL import Image, ImageDraw, ImageFont
 class SerVideo:
     EPOCH = datetime.datetime(1, 1, 1, tzinfo=datetime.timezone.utc)
     BAYER_PATTERNS = {
+        0: cv2.COLOR_GRAY2RGB,
         8: cv2.COLOR_BAYER_RGGB2RGB,
         9: cv2.COLOR_BAYER_GRBG2RGB,
         10: cv2.COLOR_BAYER_GBRG2RGB,
